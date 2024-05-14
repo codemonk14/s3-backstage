@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: s3-backstage-app
+  annotations:
+    github.com/project-slug: codemonk14/s3-backstage # Change the value to your github repo which contains terraform code.
+    backstage.io/techdocs-ref: dir:.
+  title: 'IA for S3 Automation'
+  description: An example of a S3 Creation.
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
