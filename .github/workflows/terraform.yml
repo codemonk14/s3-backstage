@@ -45,9 +45,18 @@
 name: 'Terraform'
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
+  workflow_dispatch:
+    inputs:
+      instanceName:
+        description: 'instanceName'
+      awsRegion:
+        description: 'region'
+      instanceType:
+        description: 'instanceType'
+      action:
+        description: 'Action'
+
+
 
 permissions:
   contents: read
